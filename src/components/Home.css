@@ -1,0 +1,148 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightskyblue; 
+  }
+  
+  .home-page 
+  {
+    padding: 20px;
+    box-sizing: border-box; 
+  }
+  
+  .header 
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .header .nav-buttons button,
+  .header .auth-buttons button 
+  {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: none;
+    background-color: #007BFF; 
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .header .nav-buttons button:hover,
+  .header .auth-buttons button:hover 
+  {
+    background-color: #0056b3; 
+  }
+  
+  .header .welcome 
+  {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .account-overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+    min-height: 200px;
+  }
+  
+  .accounts 
+  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .accounts button 
+  {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .accounts button:hover 
+  {
+    background-color: #0056b3;
+  }
+  
+  .spending 
+  {
+    text-align: center;
+  }
+  
+  .spending canvas 
+  {
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff; 
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .transactions-transfer 
+  {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 200px;
+  }
+  
+  .transactions,
+  .transfer 
+  {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .transactions button,
+  .transfer button 
+  {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .transactions button:hover,
+  .transfer button:hover 
+  {
+    background-color: #0056b3;
+  }
+  
+  .categories 
+  {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .category-box 
+  {
+    flex: 1;
+    height: 100px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
