@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Transfer</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Money Transfer</h1>
+        <form action="/transfer/<%= user_id %>" method="POST">
+            <div>
+                <label for="from_account_id">From Account ID:</label>
+                <input type="number" id="from_account_id" name="from_account_id" required>
+            </div>
+            <div>
+                <label for="to_account_id">To Account ID:</label>
+                <input type="number" id="to_account_id" name="to_account_id" required>
+            </div>
+            <div>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" step="0.01" required>
+            </div>
+            <div>
+                <label for="transfer_type">Transfer Type:</label>
+                <select id="transfer_type" name="transfer_type" required>
+                    <option value="internal">Internal Transfer</option>
+                    <option value="external">External Transfer</option>
+                </select>
+            </div>
+            <button type="submit">Transfer</button>
+        </form>
+    </div>
+</body>
+</html>
